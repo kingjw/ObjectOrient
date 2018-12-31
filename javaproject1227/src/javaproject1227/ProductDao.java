@@ -56,7 +56,7 @@ public class ProductDao {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 	         
 	         String url = "jdbc:mysql://localhost:3306/java?characterEncoding=UTF-8&serverTimezone=UTC";  // localhost/db이름
-	         conn = DriverManager.getConnection(url, "", ""); // url, username, password
+	         conn = DriverManager.getConnection(url, "kingjw", "1066223gks!"); // url, username, password
 	         System.out.println("connect success1");
 	         
 	         

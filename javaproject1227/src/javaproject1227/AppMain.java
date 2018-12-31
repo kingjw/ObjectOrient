@@ -89,10 +89,10 @@ public class AppMain extends JFrame{
 		p2.add(priceta);
 		p2.add(manuta);
 		
-		cb.setBounds(30, 33, 100, 120);
-		prnameta.setBounds(30, 105, 120, 40);
-		priceta.setBounds(30, 175, 120, 40);
-		manuta.setBounds(30, 245, 120, 40);
+		cb.setBounds(30, 33, 1000000000, 100000000);
+		prnameta.setBounds(100, 200, 120, 40);
+		priceta.setBounds(30, 250, 120, 40);
+		manuta.setBounds(30, 300, 120, 40);
 		
 		p3.add(enrollbtn);
 		p3.add(searchbtn);
@@ -100,6 +100,7 @@ public class AppMain extends JFrame{
 
 		
 		m1.setText("상품관리프로그램");
+		
 		
 		refreshData();
 	}
@@ -143,7 +144,7 @@ public class AppMain extends JFrame{
 				p = dao.getProduct(checkboxval);
 				
 				if(p != null) {
-					prnameta.setText("p.getPrname()");
+					prnameta.setText(p.getPrname());
 					priceta.setText(String.valueOf(p.getPrice()));
 					manuta.setText(p.getManu());
 				} else {
